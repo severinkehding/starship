@@ -90,7 +90,6 @@ jobs:
         rust: [stable, nightly]
     steps:
       - run: ls $RUNNER_TOOL_CACHE
-      - run: ls $RUNNER_TOOL_CACHE/Ruby
 
       # Checkout the branch being tested
       - uses: actions/checkout@v1
@@ -115,7 +114,7 @@ jobs:
       # Install Ruby at a fixed version
       - uses: actions/setup-ruby@v1
         with:
-          ruby-version: "2.6.4"
+          ruby-version: "2.6.3"
 
       # Install Python at a fixed version
       - uses: actions/setup-python@v1
