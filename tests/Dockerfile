@@ -28,7 +28,7 @@ RUN git clone https://github.com/syndbg/goenv.git $GOENV_ROOT \
 RUN go version
 
 # Install Ruby
-ENV RUBY_VERSION 2.6.5
+ENV RUBY_VERSION 2.6.4
 ENV RBENV_ROOT /home/nonroot/.rbenv
 ENV PATH $RBENV_ROOT/bin:$RBENV_ROOT/shims:$PATH
 RUN curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash \
