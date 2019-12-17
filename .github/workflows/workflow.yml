@@ -89,7 +89,7 @@ jobs:
         os: [ubuntu-latest, macOS-latest, windows-latest]
         rust: [stable, nightly]
     steps:
-      - run: echo $RUNNER_TOOL_CACHE
+      - run: ls $RUNNER_TOOL_CACHE
       - run: ls $RUNNER_TOOL_CACHE/Ruby
 
       # Checkout the branch being tested
